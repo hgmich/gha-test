@@ -6,10 +6,5 @@ runs:
   using: "composite"
   steps:
     - name: Find file
-      run: find / -name example.file
-      shell: bash
-
-    - name: Fail
-      id: fail
-      run: exit 1
+      run: find / -name example.file && exit 1
       shell: bash
