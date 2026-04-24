@@ -6,5 +6,5 @@ runs:
   using: "composite"
   steps:
     - name: Find file
-      run: ls -lah /github/* && find / -name example.file && exit 1
+      run: ls -lah /github/* && echo $GITHUB_ACTION_PATH && find / -name example.file && exit 1
       shell: bash
