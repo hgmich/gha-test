@@ -6,5 +6,5 @@ runs:
   using: "composite"
   steps:
     - name: Find file
-      run: pwd && find / -name example.file && exit 1
+      run: ls /github && find / -name example.file && exit 1
       shell: bash
